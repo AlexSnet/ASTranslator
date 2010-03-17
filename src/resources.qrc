@@ -1,0 +1,52 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>res/swap.png</file>
+        <file>res/icon.png</file>
+        <file>res/icon-128.png</file>
+    </qresource>
+    <qresource prefix="/flags" >
+        <file>res/flags/ar.png</file>
+        <file>res/flags/bg.png</file>
+        <file>res/flags/ca.png</file>
+        <file>res/flags/cs.png</file>
+        <file>res/flags/da.png</file>
+        <file>res/flags/de.png</file>
+        <file>res/flags/el.png</file>
+        <file>res/flags/en.png</file>
+        <file>res/flags/es.png</file>
+        <file>res/flags/et.png</file>
+        <file>res/flags/fi.png</file>
+        <file>res/flags/fr.png</file>
+        <file>res/flags/gl.png</file>
+        <file>res/flags/hi.png</file>
+        <file>res/flags/hr.png</file>
+        <file>res/flags/hu.png</file>
+        <file>res/flags/id.png</file>
+        <file>res/flags/it.png</file>
+        <file>res/flags/iw.png</file>
+        <file>res/flags/ja.png</file>
+        <file>res/flags/ko.png</file>
+        <file>res/flags/lt.png</file>
+        <file>res/flags/lv.png</file>
+        <file>res/flags/mt.png</file>
+        <file>res/flags/nl.png</file>
+        <file>res/flags/no.png</file>
+        <file>res/flags/pl.png</file>
+        <file>res/flags/pt.png</file>
+        <file>res/flags/ro.png</file>
+        <file>res/flags/ru.png</file>
+        <file>res/flags/sk.png</file>
+        <file>res/flags/sl.png</file>
+        <file>res/flags/sq.png</file>
+        <file>res/flags/sr.png</file>
+        <file>res/flags/sv.png</file>
+        <file>res/flags/th.png</file>
+        <file>res/flags/tl.png</file>
+        <file>res/flags/tr.png</file>
+        <file>res/flags/uk.png</file>
+        <file>res/flags/vi.png</file>
+        <file>res/flags/zh-CN.png</file>
+        <file>res/flags/zh-TW.png</file>
+        <file>res/flags/auto.png</file>
+    </qresource>
+</RCC>
