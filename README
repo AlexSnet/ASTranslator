@@ -1,0 +1,4 @@
+Compile & Installing:
+	qmake Translator.pro
+	make
+	sudo install ./bin/Translator /usr/local/bin
