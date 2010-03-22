@@ -4,6 +4,9 @@
 #include <QObject>
 #include <QtNetwork>
 
+#include <QScriptEngine>
+#include <QScriptValueIterator>
+
 #include "jsonstreamreader.h"
 
 class QHttp;

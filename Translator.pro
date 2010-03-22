@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # Project created by QtCreator 2009-02-25T13:42:22
 # -------------------------------------------------
-QT += network
-
+QT += network \
+    script
 TARGET = Translator
 DESTDIR = bin
 TEMPLATE = app
