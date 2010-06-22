@@ -7,6 +7,9 @@ TARGET = Translator
 DESTDIR = bin
 TEMPLATE = app
 
+# 3td party libs
+include(src/qtsingleapplication/qtsingleapplication.pri)
+
 # Anti-trash ;)
 OBJECTS_DIR = temp
 MOC_DIR = temp
@@ -30,8 +33,14 @@ FORMS += src/wnd.ui \
 RESOURCES += src/resources.qrc
 
 # Some defines for Mac OS X
-mac:RC_FILE = src/res/icon.icns
-mac:QMAKE_LFLAGS_SONAME = -Wl,-install_name,@executable_path/../Frameworks/
+mac: { 
+    QMAKE_INFO_PLIST = res/mac/Info.plist
+    RC_FILE = src/res/icon.icns
+    QMAKE_LFLAGS_SONAME = -Wl,-install_name,@executable_path/../Frameworks/
+}
 
 # Some defines for Windows
 win:RC_FILE = src/res/win.rc
+
+# Other
+CODECFORTR = UTF-8

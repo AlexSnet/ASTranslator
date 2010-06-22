@@ -1,17 +1,28 @@
-#include <QtGui/QApplication>
+
+#include <QtSingleApplication>
+#include <QtCore/qtextcodec.h>
+#include <QtGui/qmessagebox.h>
+
 #include "wnd.h"
-#include <QApplication>
+
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
 
-    QCoreApplication::setOrganizationName("AlexSnet");
-    QCoreApplication::setOrganizationDomain("alexsnet.ru");
-    QCoreApplication::setApplicationName("Translator");
+    QtSingleApplication a(argc, argv);
+
+    a.setOrganizationName("AlexSnet");
+    a.setOrganizationDomain("alexsnet.ru");
+    a.setApplicationName("Translator");
+
     a.setQuitOnLastWindowClosed(false);
 
+    if (a.isRunning())
+        return 0;
+
     wnd w;
+    a.setActivationWindow(&w, true);
+
     w.show();
     return a.exec();
 }

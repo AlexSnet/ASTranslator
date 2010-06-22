@@ -7,7 +7,10 @@ SettingsWnd::SettingsWnd(QWidget *parent) :
     m_ui(new Ui::SettingsWnd)
 {
     m_ui->setupUi(this);
-    this->setWindowTitle(tr("Options"));
+
+    setWindowTitle(tr("Options"));
+    //setUnifiedTitleAndToolBarOnMac(true);
+
     //m_ui->buttonBox->clicked(QAbsctractButton)
     restoreValues();
 }
